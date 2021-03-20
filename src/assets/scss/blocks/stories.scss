@@ -1,0 +1,86 @@
+.stories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.3rem;
+  grid-template-rows: 195px;
+  margin-bottom: 3rem;
+
+  @include breakpoint($mobile-bp) {
+    grid-template-columns: 14rem 14rem 14rem 14rem;
+    overflow: auto;
+  }
+}
+
+.stories__item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba($black, 0.2);
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba($black, 0.8),
+      rgba($black, 0) 50%,
+      rgba($black, 0.8)
+    );
+
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  &:hover {
+    .stories__preview {
+      transform: scale(1.3);
+      transition-duration: 5s;
+    }
+  }
+}
+
+.stories__preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+
+.stories__title,
+.stories__date {
+  font-size: 1.2rem;
+  color: $white;
+
+  position: absolute;
+  left: 0;
+
+  z-index: 3;
+  width: 100%;
+  padding: 1.4rem;
+
+  @include breakpoint($mobile-bp) {
+    display: none;
+  }
+}
+
+.stories__title {
+  top: 0;
+}
+
+.stories__date {
+  bottom: 0;
+  text-align: right;
+}

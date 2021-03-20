@@ -1,0 +1,178 @@
+---
+layout: default
+title: Blog | Home
+---
+
+<div class="stories">
+  <div class="stories__item" data-modal="story-modal">
+    <img class="stories__preview" src="assets/images/story1.jpg" alt="" />
+    <div class="stories__title">Это первый блок сторис</div>
+    <!-- <time class="stories__date" datetime="2021-03-18 19:21">18.03.2021</time> -->
+  </div>
+
+  <div class="stories__item" data-modal="story-modal">
+    <img class="stories__preview" src="assets/images/story2.jpg" alt="" />
+    <div class="stories__title">Это второй блок сторис</div>
+    <!-- <time class="stories__date" datetime="2021-03-18 19:21">18.03.2021</time> -->
+  </div>
+
+  <div class="stories__item" data-modal="story-modal">
+    <img class="stories__preview" src="assets/images/story3.jpg" alt="" />
+    <div class="stories__title">Это третий блок сторис</div>
+    <!-- <time class="stories__date" datetime="2021-03-18 19:21">18.03.2021</time> -->
+  </div>
+
+  <div class="stories__item" data-modal="story-modal">
+    <img class="stories__preview" src="assets/images/story4.jpg" alt="" />
+    <div class="stories__title">Это четвертый блок сторис</div>
+    <!-- <time class="stories__date" datetime="2021-03-18 19:21">18.03.2021</time> -->
+  </div>
+</div>
+<!--stories-->
+
+<!--post-->
+<div class="add-post">
+  <form class="add-post__form" action="/" method="POST">
+    <textarea
+      class="add-post__textarea"
+      name="post-text"
+      placeholder="Напишите что-нибудь"
+      data-autoresize
+    ></textarea>
+    <div class="add-post__form-actions">
+      <label for="add-post-file" class="add-post__file">
+        <input type="file" id="add-post-file" />
+      </label>
+      <button type="submit" class="add-post__send">send</button>
+    </div>
+  </form>
+</div>
+
+<div class="post">
+  <div class="post__content">
+    <p class="post__description">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in iure
+      aut a, maxime tempore, ipsum unde illo dolores consequuntur numquam non
+      provident maiores sequi officia cumque hic atque itaque!
+    </p>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2021-02-22"> 22.02.2021 </time>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- post1 -->
+
+<article class="post">
+  <div class="post__header post__header--preview">
+    <a href="post.html">
+      <img
+        class="post__preview"
+        src="assets/images/post1.jpg"
+        alt="Nu da a chto vse da?"
+    /></a>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="post.html">Lorem Ipsum</a>
+    </h2>
+    <p class="post__description">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in iure
+      aut a, maxime tempore, ipsum unde illo dolores consequuntur numquam non
+      provident maiores sequi officia cumque hic atque itaque!
+    </p>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2021-02-22"> 22.02.2021 </time>
+      </li>
+      <li class="post__data-item">
+        <a href="#"> Создание сайтов </a>
+      </li>
+    </ul>
+    <a href="post.html" class="post__read">Читать</a>
+  </div>
+</article>
+<!--post-2-->
+
+<article class="post">
+  <div class="post__header">
+    <div class="embed">
+      <iframe width="1631" height="747" src="https://www.youtube.com/embed/wfaDzSL6ll0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">CSS features</a>
+    </h2>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2021-02-22"> 22.02.2021 </time>
+      </li>
+      <li class="post__data-item">
+        <a href="#"> продвижение видео </a>
+      </li>
+    </ul>
+    <a href="post.html" class="post__read">Читать</a>
+  </div>
+</article>
+<!--post 3-->
+<article class="post">
+  <div class="post__header post__header--preview">
+    <a href="post.html">
+      <img
+        class="post__preview"
+        src="assets/images/post-3.jpg"
+        alt="Nu da a chto vse da?"
+    /></a>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="post.html">Front-end con</a>
+    </h2>
+    <p class="post__description">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in iure
+      aut a, maxime tempore, ipsum unde illo dolores consequuntur numquam non
+      provident maiores sequi officia cumque hic atque itaque!
+    </p>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2021-02-22"> 22.02.2021 </time>
+      </li>
+      <li class="post__data-item">
+        <a href="#"> Создание сайтов </a>
+      </li>
+    </ul>
+    <a href="post.html" class="post__read">Читать</a>
+  </div>
+</article>
+
+<!--pagination-->
+<ul class="pagination">
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&lt;</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link active" href="#">1</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">2</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">3</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&gt;</a>
+  </li>
+</ul>

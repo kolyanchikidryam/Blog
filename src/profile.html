@@ -1,0 +1,59 @@
+---
+layout: default
+title: Profile
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form class="form" action="/" method="post">
+  <div class="cabinet">
+    <div class="cabinet__form">
+      <div class="form__group form__group--md">
+        <input
+          type="text"
+          class="form__control"
+          placeholder="Ваше имя"
+          value="Lev Davidovich"
+        />
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input
+          type="e-mail"
+          class="form__control"
+          placeholder="Ваш электронный адрес"
+          value="levdava@mail.com"
+        />
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input
+          type="password"
+          class="form__control"
+          placeholder="Новый пароль"
+        />
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input
+          type="password"
+          class="form__control"
+          placeholder="Подтвердите новый пароль"
+        />
+        <span class="form__line"></span>
+      </div>
+    </div>
+
+    <div class="cabinet__avatar">
+      <img src="https://placehold.it/150" alt="avatar" />
+
+      <label class="cabinet__file"> <input type="file" />Выбрать аватар </label>
+    </div>
+  </div>
+
+  <div class="form__footer">
+    <button type="submit" class="btn btn--blue btn--rounded btn--sm">
+      Сохранить
+    </button>
+  </div>
+</form>
