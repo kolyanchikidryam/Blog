@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const copyText = document.querySelector('#clipboard-btn')\r\n\r\nfunction copyToClipboard() {\r\n   copyText.select();\r\n   copyText.setSelectionRange(0, 99999); /* For mobile devices */\r\n   document.execCommand(\"copy\");\r\n\r\n   console.log(\"copied\")\r\n\r\n   alert(\"Copied the text: \" + copyText.value);\r\n}\r\n\r\nnavigator.clipboard.readText().then(text => outputElem.innerText = text);\n\n//# sourceURL=webpack:///./src/assets/js/clipboard.js?");
+eval("const copyText = document.querySelector('#clipboard-btn')\r\n\r\nfunction copyToClipboard() {\r\n   copyText.select();\r\n   copyText.setSelectionRange(0, 99999); /* For mobile devices */\r\n   document.execCommand(\"copy\");\r\n\r\n   console.log(\"copied\")\r\n\r\n   alert(\"Copied the text: \" + copyText.value);\r\n}\n\n//# sourceURL=webpack:///./src/assets/js/clipboard.js?");
 
 /***/ }),
 

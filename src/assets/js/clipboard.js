@@ -9,5 +9,3 @@ function copyToClipboard() {
 
    alert("Copied the text: " + copyText.value);
 }
-
-navigator.clipboard.readText().then(text => outputElem.innerText = text);
