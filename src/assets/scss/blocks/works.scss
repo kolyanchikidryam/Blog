@@ -14,7 +14,7 @@
 }
 
 .work__preview {
-  width: 31rem;
+  width: 41rem;
 
   img {
     display: block;
@@ -33,7 +33,7 @@
   flex-direction: column;
 
   padding: 2.5rem;
-  max-width: 29rem;
+  max-width: 59rem;
 
   @include breakpoint($mobile-bp) {
     max-width: none;
