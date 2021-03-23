@@ -817,7 +817,7 @@ a:hover {
 }
 
 .container {
-    max-width: 70rem;
+    max-width: 100rem;
     margin: 0 auto;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1699,7 +1699,7 @@ a:hover {
 }
 
 .work__preview {
-    width: 31rem;
+    width: 41rem;
 }
 
 .work__preview img {
@@ -1723,7 +1723,7 @@ a:hover {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 2.5rem;
-    max-width: 29rem;
+    max-width: 59rem;
 }
 
 @media screen and (max-width: 575px) {
